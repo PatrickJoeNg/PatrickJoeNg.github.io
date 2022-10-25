@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+
+:root {
+    --font-base: "Karla";
+    --color-base-1: #08141e;
+    --color-base-2: #0f2a3f;
+    --color-base-3: #20394f;
+    --color-base-4: #f6d6bd;
+    --color-base-5: #c3a38a;
+    --color-base-6: #997577;
+    --color-base-7: #4e495f;
+    --color-base-8: #816271;
+}
+
+body {
+    font-family: var(--font-base), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--color-base-2);
+    color: var(--color-base-4);
+    font-size: 18px;
+}
+
+img {
+    width: 50%;
+}
+
+a {
+    color: var(--color-base-5);
+}
+
+a:hover {
+    color: var(--color-base-3);
+}
+
+.bg-back-color {
+    background-color: var(--color-base-3);
+}
+
+.header-text {
+    font-size: 64px;
+    font-weight: 700;
+    background-color: var(--color-base-3);
+}
+
+.header-body-text {
+    font-size: 1.4rem;
+}
+
+.nav-color {
+    background-color: var(--color-base-1);
+}
+
+.btn-brand {
+    color: var(--color-base-4);
+    background-color: var(--color-base-7);
+}
+
+.btn-brand:hover {
+    background-color: var(--color-base-1);
+}
+
+.card {
+    background-color: #20394f;
+}
+
+.card-title {
+    color: var(--color-base-4);
+    font-weight: 700;
+}
+
+.card-shadow-effect {
+    transition: all 0.5s;
+}
+
+.card-shadow-effect:hover {
+    box-shadow: 8px 8px 0 0 var(--color-base-7)
+}
+
+.img-thumbnail {
+    background-color: var(--color-base-3);
+    border: none;
+}
+
+.profile-pic {
+    width: 100%;
+    max-height: 500px;
+}
