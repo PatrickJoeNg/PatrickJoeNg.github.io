@@ -1,0 +1,247 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <title>Patrick Ng: Software Developer</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a href="#" class="navbar-brand"
+          ><span><h1>Patrick Ng</h1></span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link" aria-current="page">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link" aria-current="page"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link" aria-current="page"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header vh-100 text-center position-relative">
+      <div
+        class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
+      >
+        <h5 class="text-primary fs-3 fw-bold text-uppercase xl-text">
+          Hey There!
+        </h5>
+        <h1 id="typing-text" class="display-1 fw-bold text-white"></h1>
+
+        <p class="subtext text-uppercase fs-4">
+          <span>Software Developer | </span>
+          <span>Web Developer</span>
+        </p>
+
+        <a href="#projects" class="btn btn-primary btn-lg mt-3">
+          <div class="d-flex">
+            <div class="me-3">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="text-start">
+              <span> My Projects</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <!-- About Me -->
+    <section id="about" class="about py-5">
+      <div class="container">
+        <div class="text-center">
+          <h4 class="fw-bold text-primary">About Me</h4>
+          <hr class="w-25 mx-auto" />
+          <h2 class="mb-4">Lets get to know Me.</h2>
+        </div>
+        <div class="about-content d-flex gap-5 align-items-center h-50">
+          <img
+            src="img/profile.jpg"
+            alt=""
+            class="about-img img-fluid rounded-circle"
+          />
+          <p class="lead">
+            I am a tech-focused professional from New Jersey. I became
+            interested in tech 11 years ago when I started to delve into
+            software development in High School. I have experience and exposure
+            in computer technical support and have moved into software and web
+            development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects py-6">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h4 class="fw-bold text-primary">My Projects</h4>
+          <hr class="w-25 mx-auto" />
+          <p class="lead">Here is a look at my projects</p>
+        </div>
+
+        <div class="row">
+          <!-- Projects row 1 -->
+          <div class="col-md-6 mb-4">
+            <div class="project card shadow-lg">
+              <a data-bs-toggle="modal" data-bs-target="#modal1"></a>
+              <img src="img/lixianseo.PNG" alt="" class="card-img-top" />
+              <div class="card-body">
+                <p>
+                  <strong>Lixian Ng</strong> - Content Writer's Personal Website
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-5">
+            <div class="project card shadow-lg">
+              <a data-bs-toggle="modal" data-bs-target="#modal1"></a>
+              <img src="img/pongbuster.png" alt="" class="card-img-top" />
+              <div class="card-body">
+                <p><strong>Pong Buster</strong> - Pong Clone Game</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project card shadow-lg">
+              <a data-bs-toggle="modal" data-bs-target="#modal1"></a>
+              <img src="img/blackopspicker.JPG" alt="" class="card-img-top" />
+              <div class="card-body">
+                <p>
+                  <strong>Black Ops Map Picker</strong> - Random Zombies Map
+                  Picker for CoD Games made in C# .net framework
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project card shadow-lg">
+              <a data-bs-toggle="modal" data-bs-target="#modal1"></a>
+              <img src="img/starRider.JPG" alt="" class="card-img-top" />
+              <div class="card-body">
+                <p>
+                  <strong>Star Rider</strong> - Star Rider is a star-fox style
+                  rail shooter demo that was developed in Unity 3D.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="text-center mb-5">
+              <h4 class="fw-bold text-primary">Contact Me</h4>
+              <hr class="w-25 mx-auto" />
+              <h2 class="mb-4">It would be great to reach out!</h2>
+              <p class="lead">
+                If you have any inquiries or questions, please send me a message
+                with form below.
+              </p>
+            </div>
+
+            <!-- Form -->
+            <form name="contact" netlify>
+              <div class="mb-5">
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-2 border-muted text-white"
+                  name="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="mb-5">
+                <input
+                  type="email"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-2 border-muted text-white"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-5">
+                <textarea
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-2 border-muted text-white"
+                  name="message"
+                  placeholder="Message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="mb-5 d-grid">
+                <button type="submit" class="btn btn-primary rounded-2">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="d-flex mt-5">
+          <p class="flex-grow-1">Copyright &copy; 2023 | Patrick Ng</p>
+          <div class="hstack gap-3">
+            <a href="#">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

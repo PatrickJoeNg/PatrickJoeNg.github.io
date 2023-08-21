@@ -1,0 +1,19 @@
+.xl-text{
+    font-size: 65px;
+}
+
+img{
+    width: 200px;
+}
+
+.project:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+}   
+ 
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+}
