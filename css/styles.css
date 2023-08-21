@@ -1,4 +1,4 @@
-img {
+.about-img {
   width: 200px;
 }
 
@@ -12,7 +12,41 @@ textarea {
   resize: none !important;
 }
 
-@media (max-width: 768px) {
+.to-top-btn {
+  position: fixed;
+  z-index: 20;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: var(--bs-primary);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.to-top-btn:hover {
+  background-color: var(--bs-secondary);
+}
+
+.to-top-btn img {
+  margin-bottom: 0.25rem;
+  width: 18px;
+}
+
+.show-top-btn {
+  opacity: 1;
+}
+
+.project-modals .modal-dialog {
+  max-width: 1100px;
+  margin-top: 120px;
+}
+
+@media (max-width: 767px) {
   .about-content {
     flex-direction: column;
   }

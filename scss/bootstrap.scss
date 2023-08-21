@@ -1,12 +1,14 @@
 // Font
-$font-family-sans-serif: 'Oswald', sans-serif;
+$font-family-sans-serif: 'Karla', sans-serif;
 
 // Colors
-$primary: #3a3277;
-$secondary:  #0c0c0e;
-$dark: #000;
-$body-bg:#6772a9;
-$body-color: #fff;
+$primary: #302f9e;
+$secondary:  #8a4a97;
+$dark: #17072d;
+$light: #dceef5;
+$body-bg: $light;
+$bg-body: $dark;
+$info:#faac5c;
 
 // Buttons
 $button-radius: 0;
@@ -38,6 +40,9 @@ $spacers: (
   7: $spacer * 8,
   8: $spacer * 12,
 ) !default;
+
+$headings-margin-bottom: $spacer * 1 !default;
+$line-height-base: 1.7 !default;
 
 // Container
 $container-max-widths: (

@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -55,27 +55,25 @@
     </nav>
 
     <!-- Header -->
-    <header class="header vh-100 text-center position-relative">
+    <header class="header bg-dark vh-100 text-center position-relative">
       <div
         class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
       >
-        <h5 class="text-primary fs-3 fw-bold text-uppercase xl-text">
-          Hey There!
-        </h5>
+        <h5 class="text-secondary fs-1 fw-bold">Welcome.</h5>
         <h1 id="typing-text" class="display-1 fw-bold text-white"></h1>
 
-        <p class="subtext text-uppercase fs-4">
+        <p class="text-white text-uppercase fs-4">
           <span>Software Developer | </span>
           <span>Web Developer</span>
         </p>
 
         <a href="#projects" class="btn btn-primary btn-lg mt-3">
           <div class="d-flex">
-            <div class="me-3">
+            <div class="me-3 mt-1">
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="text-start">
-              <span> My Projects</span>
+              <span>My Projects</span>
             </div>
           </div>
         </a>
@@ -108,66 +106,226 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="projects py-6">
+    <section id="projects" class="bg-dark text-light projects py-6">
       <div class="container">
         <div class="text-center mb-5">
-          <h4 class="fw-bold text-primary">My Projects</h4>
+          <h4 class="fw-bold text-secondary">My Projects</h4>
           <hr class="w-25 mx-auto" />
           <p class="lead">Here is a look at my projects</p>
         </div>
 
+        <!-- Projects row 1 -->
         <div class="row">
-          <!-- Projects row 1 -->
           <div class="col-md-6 mb-4">
-            <div class="project card shadow-lg">
-              <a data-bs-toggle="modal" data-bs-target="#modal1"></a>
-              <img src="img/lixianseo.PNG" alt="" class="card-img-top" />
-              <div class="card-body">
-                <p>
-                  <strong>Lixian Ng</strong> - Content Writer's Personal Website
-                </p>
-              </div>
+            <div class="project card shadow-lg rounded-0">
+              <a data-bs-toggle="modal" data-bs-target="#modal1">
+                <img
+                  src="img/lixianseo.PNG"
+                  alt=""
+                  class="card-img-top rounded-0"
+                />
+                <div class="card-body">
+                  <p>
+                    <strong>Lixian Ng</strong> - Content Writer's Personal
+                    Website
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
 
           <div class="col-md-6 mb-5">
-            <div class="project card shadow-lg">
-              <a data-bs-toggle="modal" data-bs-target="#modal1"></a>
-              <img src="img/pongbuster.png" alt="" class="card-img-top" />
-              <div class="card-body">
-                <p><strong>Pong Buster</strong> - Pong Clone Game</p>
-              </div>
+            <div class="project card shadow-lg rounded-0">
+              <a data-bs-toggle="modal" data-bs-target="#modal2">
+                <img
+                  src="img/pongbuster.png"
+                  alt=""
+                  class="card-img-top rounded-0"
+                />
+                <div class="card-body">
+                  <p><strong>Pong Buster</strong> - Pong Clone Game</p>
+                </div>
+              </a>
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <div class="project card shadow-lg">
-              <a data-bs-toggle="modal" data-bs-target="#modal1"></a>
-              <img src="img/blackopspicker.JPG" alt="" class="card-img-top" />
-              <div class="card-body">
-                <p>
-                  <strong>Black Ops Map Picker</strong> - Random Zombies Map
-                  Picker for CoD Games made in C# .net framework
-                </p>
-              </div>
+            <div class="project card shadow-lg rounded-0">
+              <a data-bs-toggle="modal" data-bs-target="#modal3">
+                <img
+                  src="img/blackopspicker.JPG"
+                  alt=""
+                  class="card-img-top rounded-0"
+                />
+                <div class="card-body">
+                  <p>
+                    <strong>Black Ops Map Picker</strong> - Random Zombies Map
+                    Picker for CoD Games made in C# .net framework
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
 
           <div class="col-md-6 mb-4">
-            <div class="project card shadow-lg">
-              <a data-bs-toggle="modal" data-bs-target="#modal1"></a>
-              <img src="img/starRider.JPG" alt="" class="card-img-top" />
-              <div class="card-body">
-                <p>
-                  <strong>Star Rider</strong> - Star Rider is a star-fox style
-                  rail shooter demo that was developed in Unity 3D.
-                </p>
-              </div>
+            <div class="project card shadow-lg rounded-0">
+              <a data-bs-toggle="modal" data-bs-target="#modal4">
+                <img
+                  src="img/starRider.JPG"
+                  alt=""
+                  class="card-img-top rounded-0"
+                />
+                <div class="card-body">
+                  <p>
+                    <strong>Star Rider</strong> - Star Rider is a star-fox style
+                    rail shooter demo that was developed in Unity 3D.
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Project Modals -->
+    <div class="project-modals">
+      <!-- Modal 1 -->
+      <div id="modal1" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-dark text-light p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/lixianseo.PNG" alt="" class="img-fluid" />
+              </div>
+              <div class="col-md-6">
+                <h3><strong>Lixian Ng</strong> - Content Writer Design</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, iusto.
+                </p>
+                <a
+                  href="https://main--jovial-hamster-c47c0f.netlify.app/"
+                  class="btn btn-primary text-white"
+                  target="_blank"
+                  >Visit</a
+                >
+                <a
+                  href="https://github.com/PatrickJoeNg/lixianseo"
+                  class="btn btn-info text-dark"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <button class="btn btn-light" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div id="modal2" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-dark text-light p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/pongbuster.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col-md-6">
+                <h3><strong>Pong Buster</strong></h3>
+                <p>
+                  This is a simple pong clone designed and developed on Unity
+                  2D. It features a simple but faithful recreation of pong.
+                </p>
+                <a
+                  href="https://github.com/PatrickJoeNg/PongClone"
+                  class="btn btn-primary text-white"
+                  target="_blank"
+                  >Github</a
+                >
+                <a
+                  href="https://itzsparty.itch.io/pong-buster"
+                  class="btn btn-info text-dark"
+                  target="_blank"
+                  >itch.io</a
+                >
+                <button class="btn btn-light" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 3 -->
+      <div id="modal3" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-dark text-light p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/blackopspicker.JPG" alt="" class="img-fluid" />
+              </div>
+              <div class="col-md-6">
+                <h3><strong>Black Ops Map Picker</strong></h3>
+                <p>
+                  A C# .net framework console application. It allows users to
+                  pick a random zombies map for any of the Call of Duty Black
+                  Ops Game Series from SQL Database.
+                </p>
+                <a
+                  href="https://github.com/PatrickJoeNg/BlackOpsMapPicker"
+                  class="btn btn-primary text-white"
+                  target="_blank"
+                  >Github</a
+                >
+                <button class="btn btn-light" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 4 -->
+      <div id="modal4" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-dark text-light p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/starRider.JPG" alt="" class="img-fluid" />
+              </div>
+              <div class="col-md-6">
+                <h3><strong>Star Rider</strong></h3>
+                <p>
+                  Star Rider is a star-fox style rail shooter demo that was
+                  developed in Unity 3D. You can see some of the progress of
+                  this demo on my dev log series.
+                </p>
+                <a
+                  href="https://github.com/PatrickJoeNg/Star-Rider"
+                  class="btn btn-primary text-white"
+                  target="_blank"
+                  >Github</a
+                >
+                <a
+                  href="https://www.youtube.com/watch?v=OvqAhpOd9TQ"
+                  class="btn btn-info text-dark"
+                  target="_blank"
+                  >Youtube</a
+                >
+                <button class="btn btn-light" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Contact -->
     <section id="contact" class="contact py-5">
@@ -185,11 +343,12 @@
             </div>
 
             <!-- Form -->
-            <form name="contact" netlify>
+            <form action="https://formspree.io/f/{form_id}" method="post">
               <div class="mb-5">
                 <input
                   type="text"
-                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-2 border-muted text-white"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  id="name"
                   name="name"
                   placeholder="Name"
                 />
@@ -197,14 +356,16 @@
               <div class="mb-5">
                 <input
                   type="email"
-                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-2 border-muted text-white"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  id="email"
                   name="email"
                   placeholder="Email"
                 />
               </div>
               <div class="mb-5">
                 <textarea
-                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-2 border-muted text-white"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  id="message"
                   name="message"
                   placeholder="Message"
                   cols="30"
@@ -212,7 +373,7 @@
                 ></textarea>
               </div>
               <div class="mb-5 d-grid">
-                <button type="submit" class="btn btn-primary rounded-2">
+                <button type="submit" class="btn btn-primary rounded-0">
                   Submit
                 </button>
               </div>
@@ -221,25 +382,31 @@
         </div>
 
         <!-- Footer -->
-        <div class="d-flex mt-5">
-          <p class="flex-grow-1">Copyright &copy; 2023 | Patrick Ng</p>
-          <div class="hstack gap-3">
-            <a href="#">
-              <i class="fab fa-facebook fa-2x"></i>
-            </a>
-            <a class="text-decoration-none" href="#">
-              <i class="fab fa-twitter fa-2x"></i>
-            </a>
-            <a class="text-decoration-none" href="#">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a class="text-decoration-none" href="#">
-              <i class="fab fa-linkedin fa-2x"></i>
-            </a>
+        <footer class="footer py-5">
+          <div class="d-flex mt-5">
+            <p class="flex-grow-1">Copyright &copy; 2023 | Patrick Ng</p>
+            <div class="hstack gap-3">
+              <a href="#">
+                <i class="fab fa-facebook fa-3x"></i>
+              </a>
+              <a class="text-decoration-none" href="#">
+                <i class="fab fa-twitter fa-3x"></i>
+              </a>
+              <a class="text-decoration-none" href="#">
+                <i class="fab fa-github fa-3x"></i>
+              </a>
+              <a class="text-decoration-none" href="#">
+                <i class="fab fa-linkedin fa-3x"></i>
+              </a>
+            </div>
           </div>
-        </div>
+        </footer>
       </div>
     </section>
+
+    <button id="to-top" class="to-top-btn">
+      <img src="img/up-arrow.png" alt="" />
+    </button>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>

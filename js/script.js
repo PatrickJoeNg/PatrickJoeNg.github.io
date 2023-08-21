@@ -1,3 +1,15 @@
+function showTopButton() {
+  const toTopBtn = document.querySelector(".to-top-btn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 75) {
+      toTopBtn.classList.add("show-top-btn");
+    } else {
+      toTopBtn.classList.remove("show-top-btn");
+    }
+  });
+}
+
 function typingEffect() {
   const text = "I'm Patrick Ng.";
   const typingEle = document.getElementById("typing-text");
@@ -14,4 +26,11 @@ function startTyping(text, element, delay) {
   }
 }
 
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 document.addEventListener("DOMContentLoaded", typingEffect);
+document.addEventListener("DOMContentLoaded", showTopButton);
+document.getElementById("to-top").addEventListener("click", scrollToTop);
